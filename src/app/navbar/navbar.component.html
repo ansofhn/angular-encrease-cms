@@ -1,0 +1,96 @@
+<nav class="fixed top-0 z-10 w-full bg-softWhite">
+  <div
+    class="flex flex-wrap items-center justify-between p-6 mx-auto sm:px-10 sm:py-6"
+  >
+    <div class="flex items-center gap-x-12">
+      <div
+        routerLink="/"
+        class="flex items-center text-2xl font-bold uppercase cursor-pointer text-background"
+      >
+        encrease
+      </div>
+      <div class="w-60">
+        <input
+          type="text"
+          class="w-full py-2.5 px-3 bg-gray-100 rounded-sm text-sm"
+          placeholder="Search"
+        />
+      </div>
+    </div>
+    <div class="flex items-center gap-x-10">
+      <div>
+        <button
+          class="w-full py-2.5 px-12 bg-background rounded-sm text-sm font-medium text-softWhite"
+        >
+          Create
+        </button>
+      </div>
+      <div class="flex items-center gap-x-6">
+        <div class="flex items-center px-2 py-1 bg-gray-100 rounded-full">
+          <fa-icon
+            [icon]="faSetting"
+            class="flex items-center justify-center w-4 h-6 text-background/50"
+          ></fa-icon>
+        </div>
+        <div class="flex items-center px-2 py-1 bg-gray-100 rounded-full">
+          <fa-icon
+            [icon]="faNotification"
+            class="flex items-center justify-center w-4 h-6 text-background/50"
+          ></fa-icon>
+        </div>
+      </div>
+      <div class="flex items-center gap-x-4">
+        <div class="p-5 rounded-full bg-softGray"></div>
+        <div class="text-sm font-medium text-background">Admin</div>
+      </div>
+    </div>
+    <!-- <div class="flex items-center gap-2 lg:order-2">
+      <button
+        routerLink="/login"
+        class="px-4 py-2 font-bold uppercase transition duration-300 border-2 rounded-md cursor-pointer text-background border-background"
+      >
+        sign in
+      </button>
+      <button
+        type="button"
+        class="inline-flex items-center p-2 ml-3 text-sm rounded-lg text-background focus:outline-none focus:ring-0 lg:hidden"
+      >
+        <svg
+          class="w-6 h-6"
+          aria-hidden="true"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+    </div>
+    <div
+      class="hidden w-full mt-10 rounded-lg xl:ml-[500px] 2xl:ml-[900px] lg:mt-0 lg:justify-between lg:items-center lg:flex lg:w-auto lg:order-1 bg-softGray lg:bg-transparent lg:p-0"
+    >
+      <div
+        class="flex flex-col gap-4 p-2 font-medium lg:p-0 lg:flex-row lg:gap-10 lg:font-medium text-background"
+      >
+        <div class="p-2 cursor-pointer" routerLink="/">Home</div>
+        <div class="p-2 cursor-pointer" routerLink="/products">Products</div>
+        <div class="p-2 cursor-pointer" routerLink="/about">About</div>
+        <div class="p-2 cursor-pointer" routerLink="/contact">Contact</div>
+      </div>
+    </div> -->
+  </div>
+  <hr class="mx-10 border-gray-200" />
+  <div
+    class="flex flex-col gap-4 p-2 mx-16 text-sm font-medium text-gray-500 lg:p-0 lg:flex-row lg:gap-10"
+  >
+    <div class="p-2 py-5 cursor-pointer" routerLink="/">Dashboard</div>
+    <div class="p-2 py-5 cursor-pointer" routerLink="/products">Product</div>
+    <div class="p-2 py-5 cursor-pointer" routerLink="/about">Page</div>
+    <div class="p-2 py-5 cursor-pointer" routerLink="/contact">User</div>
+    <div class="p-2 py-5 cursor-pointer" routerLink="/contact">Report</div>
+  </div>
+</nav>
